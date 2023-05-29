@@ -1,5 +1,8 @@
+import 'package:book_my_guide/src/utils/theme/theme_wedgets/text_field_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:digital_mandi/src/utils/theme/theme_wedgets/text_theme.dart';
+import 'package:book_my_guide/src/utils/theme/theme_wedgets/text_theme.dart';
+import 'package:book_my_guide/src/utils/theme/theme_wedgets/elevated_button_theme.dart';
+import 'package:book_my_guide/src/utils/theme/theme_wedgets/outlined_button_theme.dart';
 
 class customAppTheme{
   static ThemeData lightTheme = ThemeData(
@@ -17,12 +20,17 @@ class customAppTheme{
       //   900: Color(0xFFFFE200),
       //
       // }),
-      textTheme: customTextTheme.lightTextTheme
-
+      textTheme: customTextTheme.lightTextTheme,
+      elevatedButtonTheme: myElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: myOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: MTextFormFieldTheme.lightInputDecorationTheme,
   );
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
+    textTheme: customTextTheme.darkTextTheme,
+    elevatedButtonTheme: myElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: myOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: MTextFormFieldTheme.darkInputDecorationTheme,
 
-    textTheme: customTextTheme.darkTextTheme
   );
 }

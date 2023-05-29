@@ -1,3 +1,4 @@
+import 'package:book_my_guide/src/constants/image_string.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,7 +20,6 @@ class HomeScreen extends StatelessWidget {
          Text("Paragraph",style: Theme.of(context).textTheme.bodyText1),
          ElevatedButton(onPressed: (){} , child: Text("Elevated buttton")),
          OutlinedButton(onPressed: (){} , child: Text("Outlined Button")),
-
          Padding(
            padding: const EdgeInsets.all(20.0),
            child: Image(image: AssetImage("assets/images/team.png")),

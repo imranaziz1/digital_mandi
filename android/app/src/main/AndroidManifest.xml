@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.digital_mandi">
+    package="com.example.book_my_guide">
    <application
-        android:label="digital_mandi"
+        android:label="book_my_guide"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

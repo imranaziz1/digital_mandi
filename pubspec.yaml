@@ -1,4 +1,4 @@
-name: digital_mandi
+name: book_my_guide
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -40,6 +40,17 @@ dependencies:
   video_player: ^2.4.7
   get: ^4.6.5
   google_fonts: ^3.0.1
+  firebase_core: ^2.3.0
+  flutter_otp_text_field: ^1.1.0+2
+  firebase_auth: ^4.1.4
+  google_maps_flutter: ^2.2.1
+  flutter_chat_ui: ^1.6.6
+  image_picker: ^0.8.6
+  file_picker: ^5.2.4
+  open_filex: ^4.3.2
+  uuid: ^3.0.7
+  mime: ^1.0.3
+  cloud_firestore: ^4.5.0
 
 dev_dependencies:
   flutter_test:
@@ -59,6 +70,10 @@ dev_dependencies:
 flutter:
   assets:
   - assets/images/
+  - assets/images/welcome_screen/
+  - assets/images/sign_up_screen/
+  - assets/images/dashboard/
+  - assets/images/profile/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
