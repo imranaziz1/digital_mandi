@@ -10,7 +10,7 @@ const String appTagLine = "You Can Sale \n Everything Here";
 const String welcomeTitle = "Make Your Profit";
 const String welcomeSubTitle =  "Let's Start From Today, Earn by your will";
 
-const String txtSigninTitle = "Make Your Profit";
+const String txtSigninTitle = "This is my project for tourist guide app";
 const String txtSigninSubTitle =  "Let's Start From Today, Earn by your will";
 
 const String txtEmail = "E-Mail";
