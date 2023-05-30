@@ -16,3 +16,5 @@ const String bookmarkIcon = "assets/images/dashboard/bookmarkIcon.png";
 const String bannerVegetables = "assets/images/dashboard/bannerVegetables.png";
 
 const String profilePhoto = "assets/images/profile/profile.jpg";
+
+const String facebookImg = "assets/images/sign_up_screen/facebook.png";
