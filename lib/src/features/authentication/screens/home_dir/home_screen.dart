@@ -1,4 +1,3 @@
-import 'package:book_my_guide/src/constants/image_string.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,28 +6,31 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     // backgroundColor: Theme.of(context).backgroundColor,
-      appBar: AppBar(
-        title: Text('My Home Page'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: ListView(
-     children: [
-         Text("Heading",style: Theme.of(context).textTheme.headline2,),
-         Text('Sub-Headings',style: Theme.of(context).textTheme.subtitle2),
-         Text("Paragraph",style: Theme.of(context).textTheme.bodyText1),
-         ElevatedButton(onPressed: (){} , child: Text("Elevated buttton")),
-         OutlinedButton(onPressed: (){} , child: Text("Outlined Button")),
-         Padding(
-           padding: const EdgeInsets.all(20.0),
-           child: Image(image: AssetImage("assets/images/team.png")),
-         ),
-
-     ],
+        // backgroundColor: Theme.of(context).backgroundColor,
+        appBar: AppBar(
+          title: const Text('My Home Page'),
         ),
-      )
-
-    );
+        body: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: ListView(
+            children: [
+              Text(
+                "Heading",
+                style: Theme.of(context).textTheme.displayMedium,
+              ),
+              Text('Sub-Headings',
+                  style: Theme.of(context).textTheme.titleSmall),
+              Text("Paragraph", style: Theme.of(context).textTheme.bodyLarge),
+              ElevatedButton(
+                  onPressed: () {}, child: const Text("Elevated buttton")),
+              OutlinedButton(
+                  onPressed: () {}, child: const Text("Outlined Button")),
+              const Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Image(image: AssetImage("assets/images/team.png")),
+              ),
+            ],
+          ),
+        ));
   }
 }

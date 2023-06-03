@@ -16,17 +16,18 @@ class SignupScreen extends StatelessWidget {
             child: Padding(
           padding: const EdgeInsets.all(defaultSize),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              FormHeaderWidget(
-                image: shoppingMarket,
+              const FormHeaderWidget(
+                image: signupScreenimage,
                 title: txtSignupTitle,
                 subtitle: txtSignupSubtitle,
               ),
-              SignupFormWidget(),
+              const SignupFormWidget(),
               Column(
                 children: [
-                  Text("OR"),
+                  const Text("OR"),
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton.icon(
@@ -38,13 +39,14 @@ class SignupScreen extends StatelessWidget {
                       label: Text(txtSigninWithGoogle.toUpperCase()),
                     ),
                   ),
-                  TextButton(onPressed: () {}, child: Text.rich(TextSpan(
-                    children: [
-                      TextSpan(text: txtAlreadyHaveAccount,style: Theme.of(context).textTheme.bodyText1),
-                      TextSpan(text: mySignup.toUpperCase()),
-
-                    ]
-                  )))
+                  TextButton(
+                      onPressed: () {},
+                      child: Text.rich(TextSpan(children: [
+                        TextSpan(
+                            text: txtAlreadyHaveAccount,
+                            style: Theme.of(context).textTheme.bodyLarge),
+                        TextSpan(text: mySignup.toUpperCase()),
+                      ])))
                 ],
               ),
             ],

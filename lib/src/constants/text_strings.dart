@@ -1,17 +1,14 @@
+const String myLogin = "Sign In";
+const String mySignup = "Sign Up";
 
-
-const String myLogin = "signIn";
-const String mySignup = "Signup";
-
-
-const String appName = "Digital Mandi";
+const String appName = "Book my guide";
 const String appTagLine = "You Can Sale \n Everything Here";
 
-const String welcomeTitle = "Make Your Profit";
-const String welcomeSubTitle =  "Let's Start From Today, Earn by your will";
+const String welcomeTitle = "Adventure is on the Way";
+const String welcomeSubTitle = "Let's Start From Today, Enjoy your life";
 
-const String txtSigninTitle = "Make Your Profit";
-const String txtSigninSubTitle =  "Let's Start From Today, Earn by your will";
+const String txtSigninTitle = "Adventure is on the Way";
+const String txtSigninSubTitle = "Let's Start From Today, Earn by your will";
 
 const String txtEmail = "E-Mail";
 const String txtPassword = "Password";
@@ -31,13 +28,15 @@ const String txtFullName = "Full Name";
 const String txtNextBtn = "Next";
 
 const String txtForgetPasswordTitle = "Make Selection";
-const String txtForgetPasswordSubtitle = "Select one of the option given below to reset your password.";
+const String txtForgetPasswordSubtitle =
+    "Select one of the option given below to reset your password.";
 
 const String txtResetViaEmail = "Reset via Mail verification";
 const String txtResetViaPhone = "Reset via Phone verification ";
 
 const String txtOtpTitle = " OTP Verification";
-const String txtOtpSubtitle = "To verify, enter the OTP you received on your phone.";
+const String txtOtpSubtitle =
+    "To verify, enter the OTP you received on your phone.";
 
 const String txtDashboardTitle = "Welcome at Digital Mandi";
 const String txtDashboardHeading = "Explore Grocery";

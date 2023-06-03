@@ -1,5 +1,3 @@
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FormHeaderWidget extends StatelessWidget {
@@ -13,7 +11,6 @@ class FormHeaderWidget extends StatelessWidget {
     this.heightBetween,
     this.crossAxisAlignment = CrossAxisAlignment.start,
     this.textAlign,
-
   }) : super(key: key);
 
   final String image, title, subtitle;
@@ -30,18 +27,21 @@ class FormHeaderWidget extends StatelessWidget {
       crossAxisAlignment: crossAxisAlignment,
       children: [
         Image(
-          image: AssetImage(image), color: imageColor,
+          image: AssetImage(image),
+          color: imageColor,
           height: size.height * imageHeight,
         ),
-        SizedBox(height: heightBetween,),
-
-        Text(
-          title,
-          style: Theme.of(context).textTheme.headline1,
+        SizedBox(
+          height: heightBetween,
         ),
         Text(
-          subtitle, textAlign: textAlign,
-          style: Theme.of(context).textTheme.bodyText1,
+          title,
+          style: Theme.of(context).textTheme.displayLarge,
+        ),
+        Text(
+          subtitle,
+          textAlign: textAlign,
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
       ],
     );
