@@ -16,7 +16,7 @@ class ProfileScreen extends StatelessWidget {
             onPressed: () {}, icon: const Icon(Icons.arrow_back_ios_rounded)),
         title: Text(
           txtProfile,
-          style: Theme.of(context).textTheme.headline4,
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
         actions: [
           IconButton(
@@ -49,7 +49,7 @@ class ProfileScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                           color: myPrimaryColor),
-                      child: Icon(
+                      child: const Icon(
                         Icons.mode_edit,
                         size: 20.0,
                         color: Colors.black,
@@ -63,7 +63,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               Text(
                 txtProfileHeading,
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
               Text(
                 txtProfileSubHeading,
