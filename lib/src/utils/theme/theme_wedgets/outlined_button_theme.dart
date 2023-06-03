@@ -9,8 +9,8 @@ class myOutlinedButtonTheme{
 
     style: OutlinedButton.styleFrom(
       shape: RoundedRectangleBorder(),
-      foregroundColor: mySecondaryColor,
-      side: BorderSide(color: mySecondaryColor),
+      foregroundColor: mybuttonColor,
+      side: BorderSide(color: mybuttonColor),
       padding: EdgeInsets.symmetric(vertical: buttonHeight),
     ),
   );

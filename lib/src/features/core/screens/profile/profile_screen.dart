@@ -47,8 +47,8 @@ class ProfileScreen extends StatelessWidget {
                       width: 35,
                       height: 35,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
-                        color: myPrimaryColor),
+                          borderRadius: BorderRadius.circular(100),
+                          color: myPrimaryColor),
                       child: Icon(
                         Icons.mode_edit,
                         size: 20.0,
@@ -67,7 +67,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               Text(
                 txtProfileSubHeading,
-                style: Theme.of(context).textTheme.bodyText2,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
                 height: 20,
@@ -177,7 +177,7 @@ class ProfileMenuWidget extends StatelessWidget {
       ),
       title: Text(
         title,
-        style: Theme.of(context).textTheme.bodyText1?.apply(color: textColor),
+        style: Theme.of(context).textTheme.bodyLarge?.apply(color: textColor),
       ),
       trailing: endIcon
           ? Container(

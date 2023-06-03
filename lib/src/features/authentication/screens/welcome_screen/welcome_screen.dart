@@ -1,11 +1,11 @@
 import 'package:book_my_guide/src/common_widgets/fade_in_animation/fade_in_animation_controller.dart';
 import 'package:book_my_guide/src/constants/color.dart';
-import 'package:book_my_guide/src/constants/image_string.dart';
 import 'package:book_my_guide/src/constants/sizes.dart';
 import 'package:book_my_guide/src/features/authentication/screens/login_screen/login_screen.dart';
 import 'package:book_my_guide/src/features/authentication/screens/signup_screen/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 import '../../../../constants/text_strings.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -17,7 +17,8 @@ class WelcomeScreen extends StatelessWidget {
     controller.startAnimation();
 
     var mediaQuery = MediaQuery.of(context);
-    var height = mediaQuery.size.height;
+
+    //var height = mediaQuery.size.height;
     var brightness = mediaQuery.platformBrightness;
     final isDarkMode = brightness == Brightness.dark;
 
@@ -43,10 +44,10 @@ class WelcomeScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Row(
+                  const Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       Text("Book",
                           style: TextStyle(
                             color: Colors.green,
@@ -54,21 +55,21 @@ class WelcomeScreen extends StatelessWidget {
                             fontSize: 40.0,
                             fontWeight: FontWeight.bold,
                           )),
-                      SizedBox(width: 10,),
                       Text(
                         "My",
                         style: TextStyle(
-                          fontSize: 20.0,
+                            fontSize: 20.0,
                             color: Colors.teal,
-                            fontWeight:FontWeight.bold,
+                            fontWeight: FontWeight.bold,
                             decorationColor: Colors.white),
                       ),
-                      SizedBox(width: 10,),
-                      Text("Guide",
+                      Text(
+                        "Guide",
                         style: TextStyle(
                           color: Colors.brown,
                           fontSize: 40.0,
-                          fontWeight: FontWeight.bold,),
+                          fontWeight: FontWeight.bold,
+                        ),
                       )
                     ],
                   ),
@@ -76,10 +77,10 @@ class WelcomeScreen extends StatelessWidget {
                     children: [
                       Text(
                         welcomeTitle,
-                        style: Theme.of(context).textTheme.headline5,
+                        style: Theme.of(context).textTheme.headlineSmall,
                       ),
                       Text(welcomeSubTitle,
-                          style: Theme.of(context).textTheme.subtitle1),
+                          style: Theme.of(context).textTheme.titleMedium),
                     ],
                   ),
                   Row(

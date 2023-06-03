@@ -1,12 +1,14 @@
-
 const String spImage1 = "assets/images/team.png";
 const String spImage2 = "assets/images/connection.png";
 
-const String shoppingMarket = "assets/images/welcome_screen/shoppingMarket.png";
-const String shopping1 = "assets/images/welcome_screen/shopping1.jpeg";
+const String signupScreenimage =
+    "assets/images/welcome_screen/travelling_guide.jpg";
+const String appname = "assets/images/welcome_screen/app_name.png";
 
-const String marketSignInScreen = "assets/images/welcome_screen/market_transparent.png";
-const String marketSignUpScreen = "assets/images/welcome_screen/market_allu.png";
+const String marketSignInScreen =
+    "assets/images/welcome_screen/market_transparent.png";
+const String marketSignUpScreen =
+    "assets/images/welcome_screen/market_allu.png";
 
 const String googleLogo = "assets/images/sign_up_screen/google.png";
 

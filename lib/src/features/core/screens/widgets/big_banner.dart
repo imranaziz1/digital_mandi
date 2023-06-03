@@ -1,4 +1,3 @@
-
 import 'package:book_my_guide/src/constants/color.dart';
 import 'package:book_my_guide/src/constants/image_string.dart';
 import 'package:book_my_guide/src/constants/sizes.dart';
@@ -23,40 +22,60 @@ class BigBanner extends StatelessWidget {
             // width: 320,
             height: 200,
             child: Padding(
-              padding: const EdgeInsets.only(right: 05,top: 10),
+              padding: const EdgeInsets.only(right: 05, top: 10),
               child: Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: myCardBgColor),
-                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: myCardBgColor),
+                padding: const EdgeInsets.all(10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Buy one get one free!", style: txtTheme.headline4,maxLines: 2,overflow: TextOverflow.ellipsis,),
-                        Flexible(child: Image(image: AssetImage(bannerVegetables), height: 110,)),
+                        Text(
+                          "Buy one get one free!",
+                          style: txtTheme.headlineMedium,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        const Flexible(
+                            child: Image(
+                          image: AssetImage(bannerVegetables),
+                          height: 110,
+                        )),
                       ],
                     ),
                     Row(
                       children: [
-                        ElevatedButton(style: ElevatedButton.styleFrom(shape: const CircleBorder()),onPressed: (){},child: Icon(Icons.play_arrow)),
-                        SizedBox(width: defaultDashboardPadding,),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: const CircleBorder()),
+                            onPressed: () {},
+                            child: const Icon(Icons.play_arrow)),
+                        const SizedBox(
+                          width: defaultDashboardPadding,
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Video Animation", style: txtTheme.headline4,overflow: TextOverflow.ellipsis,),
-                            Text("Watch Video for more information",style: txtTheme.bodyText2,overflow: TextOverflow.ellipsis,),
-
+                            Text(
+                              "Video Animation",
+                              style: txtTheme.headlineMedium,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            Text(
+                              "Watch Video for more information",
+                              style: txtTheme.bodyMedium,
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ],
                         ),
-
                       ],
-
                     ),
                   ],
-
                 ),
-
               ),
             ),
           ),
@@ -64,40 +83,60 @@ class BigBanner extends StatelessWidget {
             // width: 320,
             height: 200,
             child: Padding(
-              padding: const EdgeInsets.only(right: 05,top: 10),
+              padding: const EdgeInsets.only(right: 05, top: 10),
               child: Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: myCardBgColor),
-                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: myCardBgColor),
+                padding: const EdgeInsets.all(10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Buy one get one free!", style: txtTheme.headline4,maxLines: 2,overflow: TextOverflow.ellipsis,),
-                        Flexible(child: Image(image: AssetImage(bannerVegetables), height: 110,)),
+                        Text(
+                          "Buy one get one free!",
+                          style: txtTheme.headlineMedium,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        const Flexible(
+                            child: Image(
+                          image: AssetImage(bannerVegetables),
+                          height: 110,
+                        )),
                       ],
                     ),
                     Row(
                       children: [
-                        ElevatedButton(style: ElevatedButton.styleFrom(shape: const CircleBorder()),onPressed: (){},child: Icon(Icons.play_arrow)),
-                        SizedBox(width: defaultDashboardPadding,),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: const CircleBorder()),
+                            onPressed: () {},
+                            child: const Icon(Icons.play_arrow)),
+                        const SizedBox(
+                          width: defaultDashboardPadding,
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Video Animation", style: txtTheme.headline4,overflow: TextOverflow.ellipsis,),
-                            Text("Watch Video for more information",style: txtTheme.bodyText2,overflow: TextOverflow.ellipsis,),
-
+                            Text(
+                              "Video Animation",
+                              style: txtTheme.headlineMedium,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            Text(
+                              "Watch Video for more information",
+                              style: txtTheme.bodyMedium,
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ],
                         ),
-
                       ],
-
                     ),
                   ],
-
                 ),
-
               ),
             ),
           ),
@@ -105,40 +144,60 @@ class BigBanner extends StatelessWidget {
             // width: 320,
             height: 200,
             child: Padding(
-              padding: const EdgeInsets.only(right: 05,top: 10),
+              padding: const EdgeInsets.only(right: 05, top: 10),
               child: Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: myCardBgColor),
-                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: myCardBgColor),
+                padding: const EdgeInsets.all(10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Buy one get one free!", style: txtTheme.headline4,maxLines: 2,overflow: TextOverflow.ellipsis,),
-                        Flexible(child: Image(image: AssetImage(bannerVegetables), height: 110,)),
+                        Text(
+                          "Buy one get one free!",
+                          style: txtTheme.headlineMedium,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        const Flexible(
+                            child: Image(
+                          image: AssetImage(bannerVegetables),
+                          height: 110,
+                        )),
                       ],
                     ),
                     Row(
                       children: [
-                        ElevatedButton(style: ElevatedButton.styleFrom(shape: const CircleBorder()),onPressed: (){},child: Icon(Icons.play_arrow)),
-                        SizedBox(width: defaultDashboardPadding,),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: const CircleBorder()),
+                            onPressed: () {},
+                            child: const Icon(Icons.play_arrow)),
+                        const SizedBox(
+                          width: defaultDashboardPadding,
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Video Animation", style: txtTheme.headline4,overflow: TextOverflow.ellipsis,),
-                            Text("Watch Video for more information",style: txtTheme.bodyText2,overflow: TextOverflow.ellipsis,),
-
+                            Text(
+                              "Video Animation",
+                              style: txtTheme.headlineMedium,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            Text(
+                              "Watch Video for more information",
+                              style: txtTheme.bodyMedium,
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ],
                         ),
-
                       ],
-
                     ),
                   ],
-
                 ),
-
               ),
             ),
           ),
@@ -146,40 +205,60 @@ class BigBanner extends StatelessWidget {
             // width: 320,
             height: 200,
             child: Padding(
-              padding: const EdgeInsets.only(right: 05,top: 10),
+              padding: const EdgeInsets.only(right: 05, top: 10),
               child: Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: myCardBgColor),
-                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: myCardBgColor),
+                padding: const EdgeInsets.all(10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Buy one get one free!", style: txtTheme.headline4,maxLines: 2,overflow: TextOverflow.ellipsis,),
-                        Flexible(child: Image(image: AssetImage(bannerVegetables), height: 110,)),
+                        Text(
+                          "Buy one get one free!",
+                          style: txtTheme.headlineMedium,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        const Flexible(
+                            child: Image(
+                          image: AssetImage(bannerVegetables),
+                          height: 110,
+                        )),
                       ],
                     ),
                     Row(
                       children: [
-                        ElevatedButton(style: ElevatedButton.styleFrom(shape: const CircleBorder()),onPressed: (){},child: Icon(Icons.play_arrow)),
-                        SizedBox(width: defaultDashboardPadding,),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: const CircleBorder()),
+                            onPressed: () {},
+                            child: const Icon(Icons.play_arrow)),
+                        const SizedBox(
+                          width: defaultDashboardPadding,
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Video Animation", style: txtTheme.headline4,overflow: TextOverflow.ellipsis,),
-                            Text("Watch Video for more information",style: txtTheme.bodyText2,overflow: TextOverflow.ellipsis,),
-
+                            Text(
+                              "Video Animation",
+                              style: txtTheme.headlineMedium,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            Text(
+                              "Watch Video for more information",
+                              style: txtTheme.bodyMedium,
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ],
                         ),
-
                       ],
-
                     ),
                   ],
-
                 ),
-
               ),
             ),
           ),
@@ -187,44 +266,63 @@ class BigBanner extends StatelessWidget {
             // width: 320,
             height: 200,
             child: Padding(
-              padding: const EdgeInsets.only(right: 05,top: 10),
+              padding: const EdgeInsets.only(right: 05, top: 10),
               child: Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),color: myCardBgColor),
-                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: myCardBgColor),
+                padding: const EdgeInsets.all(10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("Buy one get one free!", style: txtTheme.headline4,maxLines: 2,overflow: TextOverflow.ellipsis,),
-                        Flexible(child: Image(image: AssetImage(bannerVegetables), height: 110,)),
+                        Text(
+                          "Buy one get one free!",
+                          style: txtTheme.headlineMedium,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                        const Flexible(
+                            child: Image(
+                          image: AssetImage(bannerVegetables),
+                          height: 110,
+                        )),
                       ],
                     ),
                     Row(
                       children: [
-                        ElevatedButton(style: ElevatedButton.styleFrom(shape: const CircleBorder()),onPressed: (){},child: Icon(Icons.play_arrow)),
-                        SizedBox(width: defaultDashboardPadding,),
+                        ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                shape: const CircleBorder()),
+                            onPressed: () {},
+                            child: const Icon(Icons.play_arrow)),
+                        const SizedBox(
+                          width: defaultDashboardPadding,
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Video Animation", style: txtTheme.headline4,overflow: TextOverflow.ellipsis,),
-                            Text("Watch Video for more information",style: txtTheme.bodyText2,overflow: TextOverflow.ellipsis,),
-
+                            Text(
+                              "Video Animation",
+                              style: txtTheme.headlineMedium,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            Text(
+                              "Watch Video for more information",
+                              style: txtTheme.bodyMedium,
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ],
                         ),
-
                       ],
-
                     ),
                   ],
-
                 ),
-
               ),
             ),
           ),
-
         ],
       ),
     );
