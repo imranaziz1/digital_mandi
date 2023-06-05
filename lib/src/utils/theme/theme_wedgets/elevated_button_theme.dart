@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../constants/color.dart';
 import '../../../constants/sizes.dart';
 
-class ElevatedButtonTheme {
-  ElevatedButtonTheme();
-  final lightlyElevatedButtonTheme = ElevatedButtonThemeData(
+class MyElevatedButtonTheme {
+  MyElevatedButtonTheme();
+  static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       shape: const RoundedRectangleBorder(),
       backgroundColor: mySecondaryColor,
@@ -15,7 +15,7 @@ class ElevatedButtonTheme {
     ),
   );
 
-  final darklyElevatedButtonTheme = ElevatedButtonThemeData(
+  static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       shape: const RoundedRectangleBorder(),
       backgroundColor: appWhiteColor,

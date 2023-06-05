@@ -3,26 +3,23 @@ import 'package:flutter/material.dart';
 import '../../../constants/color.dart';
 import '../../../constants/sizes.dart';
 
-class myOutlinedButtonTheme{
-  myOutlinedButtonTheme();
+class MyOutlinedButtonTheme {
+  MyOutlinedButtonTheme();
   static final lightOutlinedButtonTheme = OutlinedButtonThemeData(
-
     style: OutlinedButton.styleFrom(
-      shape: RoundedRectangleBorder(),
+      shape: const RoundedRectangleBorder(),
       foregroundColor: mybuttonColor,
-      side: BorderSide(color: mybuttonColor),
-      padding: EdgeInsets.symmetric(vertical: buttonHeight),
+      side: const BorderSide(color: mybuttonColor),
+      padding: const EdgeInsets.symmetric(vertical: buttonHeight),
     ),
   );
 
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
-
     style: OutlinedButton.styleFrom(
-      shape: RoundedRectangleBorder(),
+      shape: const RoundedRectangleBorder(),
       foregroundColor: appWhiteColor,
-      side: BorderSide(color: appWhiteColor),
-      padding: EdgeInsets.symmetric(vertical: buttonHeight),
+      side: const BorderSide(color: appWhiteColor),
+      padding: const EdgeInsets.symmetric(vertical: buttonHeight),
     ),
   );
-
 }
