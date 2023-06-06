@@ -1,12 +1,8 @@
-import 'dart:math';
-
 import 'package:book_my_guide/src/features/authentication/screens/welcome_screen/welcome_screen.dart';
 import 'package:book_my_guide/src/features/core/screens/dashboard/dashboard.dart';
 import 'package:book_my_guide/src/repository/authentication_repository/exception/signup_email_password_failure.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
-
 
 class AuthenticationRepository extends GetxController {
   static AuthenticationRepository instance = Get.find();
@@ -24,8 +20,9 @@ class AuthenticationRepository extends GetxController {
   }
 
   _setInitialScreen(User? user) {
-    user == null ? Get.offAll(() => const WelcomeScreen()) : Get
-        .offAll(() => const Dashboard());
+    user == null
+        ? Get.offAll(() => const WelcomeScreen())
+        : Get.offAll(() => const Dashboard());
   }
 
   Future<void> phoneAuthentication(String phoneNo) async {
@@ -50,38 +47,37 @@ class AuthenticationRepository extends GetxController {
     );
   }
 
-  Future<bool>verifyOTP(String otp) async {
-    var credentials = await _auth
-        .signInWithCredential(PhoneAuthProvider.credential(
-        verificationId: verificationId.value, smsCode: otp));
+  Future<bool> verifyOTP(String otp) async {
+    var credentials = await _auth.signInWithCredential(
+        PhoneAuthProvider.credential(
+            verificationId: verificationId.value, smsCode: otp));
     return credentials.user != null ? true : false;
   }
 
-  Future<void> createUserWithEmailAndPassword(String email,
-      String password) async {
+  Future<void> createUserWithEmailAndPassword(
+      String email, String password) async {
     try {
       await _auth.createUserWithEmailAndPassword(
           email: email, password: password);
-      firebaseUser.value != null ? Get.offAll(() => const Dashboard()) : Get
-          .to(() => WelcomeScreen());
+      firebaseUser.value != null
+          ? Get.offAll(() => const Dashboard())
+          : Get.to(() => const WelcomeScreen());
     } on FirebaseAuthException catch (e) {
       final ex = SignupWIthEmailAndPasswordFailure.code(e.code);
       print('FIREBASE AUTH EXCEPTION - ${ex.message}');
       throw ex;
-    }
-    catch (_) {
+    } catch (_) {
       const ex = SignupWIthEmailAndPasswordFailure();
       print('EXCEPTION - ${ex.message}');
       throw ex;
     }
   }
 
-  Future<void> loginUserWithEmailAndPassword(String email,
-      String password) async {
+  Future<void> loginUserWithEmailAndPassword(
+      String email, String password) async {
     try {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
-    } on FirebaseAuthException catch (e) {}
-    catch (_) {}
+    } catch (_) {}
   }
 
   Future<void> logout() async => await _auth.signOut();

@@ -12,37 +12,43 @@ class ForgetPasswordMail extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(
-          child: Container(
-            child: Padding(
-              padding: const EdgeInsets.all(defaultSize),
-              child: Column(
-                children: [
-                  SizedBox(height: defaultSize * 4,),
-
-                  const FormHeaderWidget(image: shopping1,
-                      title: txtForgetPassword,
-                      subtitle: txtForgetPasswordSubtitle,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    heightBetween: 30.0,
-                    textAlign: TextAlign.center,
-                  ),
-                  SizedBox(height: defaultSize,),
-                  Form(child: Column(
-                    children: [
+          child: Padding(
+            padding: const EdgeInsets.all(defaultSize),
+            child: Column(
+              children: [
+                const SizedBox(
+                  height: defaultSize * 4,
+                ),
+                const FormHeaderWidget(
+                  image: appname,
+                  title: txtForgetPassword,
+                  subtitle: txtForgetPasswordSubtitle,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  heightBetween: 30.0,
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(
+                  height: defaultSize,
+                ),
+                Form(
+                    child: Column(
+                  children: [
                     TextFormField(
-                      decoration:  const InputDecoration(
-                        label: Text(txtEmail),
-                        hintText: txtEmail,
-                        prefixIcon: Icon(Icons.mail_outline_outlined)
-                      ),
+                      decoration: const InputDecoration(
+                          label: Text(txtEmail),
+                          hintText: txtEmail,
+                          prefixIcon: Icon(Icons.mail_outline_outlined)),
                     ),
-                      const SizedBox(height: 20.0,),
-                       SizedBox(width: double.infinity,
-                          child:
-                      ElevatedButton(onPressed: (){}, child: Text(txtNextBtn))
-                      )],))
-                ],
-              ),
+                    const SizedBox(
+                      height: 20.0,
+                    ),
+                    SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                            onPressed: () {}, child: const Text(txtNextBtn)))
+                  ],
+                ))
+              ],
             ),
           ),
         ),
@@ -50,4 +56,3 @@ class ForgetPasswordMail extends StatelessWidget {
     );
   }
 }
-

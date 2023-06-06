@@ -39,7 +39,7 @@ dependencies:
   flutter_native_splash: ^2.2.11
   video_player: ^2.4.7
   get: ^4.6.5
-  google_fonts: ^3.0.1
+  google_fonts: ^4.0.4
   firebase_core: ^2.3.0
   flutter_otp_text_field: ^1.1.0+2
   firebase_auth: ^4.1.4
@@ -51,6 +51,7 @@ dependencies:
   uuid: ^3.0.7
   mime: ^1.0.3
   cloud_firestore: ^4.5.0
+  curved_navigation_bar: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -73,7 +74,7 @@ flutter:
   - assets/images/welcome_screen/
   - assets/images/sign_up_screen/
   - assets/images/dashboard/
-  - assets/images/profile/
+  - assets/images/home_screen/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

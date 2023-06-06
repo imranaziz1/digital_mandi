@@ -1,12 +1,10 @@
 import 'package:book_my_guide/src/constants/sizes.dart';
 import 'package:book_my_guide/src/constants/text_strings.dart';
-import 'package:book_my_guide/src/features/authentication/screens/forget_password/forget_password_option/forget_password_btn_widget.dart';
 import 'package:book_my_guide/src/features/authentication/screens/forget_password/forget_password_option/forget_password_model_bottom_sheet.dart';
 import 'package:book_my_guide/src/features/core/screens/dashboard/dashboard.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
@@ -29,7 +27,7 @@ class LoginForm extends StatelessWidget {
                   hintText: txtEmail,
                   border: OutlineInputBorder()),
             ),
-            SizedBox(
+            const SizedBox(
               height: defaultFormSize - 20,
             ),
             TextFormField(
@@ -42,7 +40,7 @@ class LoginForm extends StatelessWidget {
                     onPressed: null, icon: Icon(CupertinoIcons.eye_fill)),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: defaultSize,
             ),
             Align(
@@ -51,18 +49,18 @@ class LoginForm extends StatelessWidget {
                   onPressed: () {
                     ForgetPasswordScreen.buildShowModalBottomSheet(context);
                   },
-                  child: Text(txtForgetPassword)),
+                  child: const Text(txtForgetPassword)),
             ),
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                     onPressed: () {
-                      Get.to(Dashboard());
-                    }, child: Text(myLogin.toUpperCase())))
+                      Get.to(const Dashboard());
+                    },
+                    child: Text(myLogin.toUpperCase())))
           ],
         ),
       ),
     ));
   }
-
 }
