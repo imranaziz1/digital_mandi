@@ -30,7 +30,7 @@ class HomeAppBar extends StatelessWidget {
               ),
             ),
           ),
-          const Row(
+          Row(
             children: [
               Icon(
                 Icons.location_on,

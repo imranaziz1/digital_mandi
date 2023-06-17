@@ -1,10 +1,12 @@
 import 'package:book_my_guide/src/constants/sizes.dart';
 import 'package:book_my_guide/src/constants/text_strings.dart';
 import 'package:book_my_guide/src/features/authentication/screens/forget_password/forget_password_option/forget_password_model_bottom_sheet.dart';
-import 'package:book_my_guide/src/features/core/screens/dashboard/dashboard.dart';
+import 'package:book_my_guide/src/features/core/screens/home_screen/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../core/screens/dashboard/admin_panel_test.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({
@@ -55,7 +57,7 @@ class LoginForm extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                     onPressed: () {
-                      Get.to(const Dashboard());
+                      Get.to( AdminPanelDashboard());
                     },
                     child: Text(myLogin.toUpperCase())))
           ],

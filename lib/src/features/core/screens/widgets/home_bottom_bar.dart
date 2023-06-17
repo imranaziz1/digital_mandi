@@ -14,6 +14,7 @@ class HomeBottomBar extends StatelessWidget {
           Icons.person_outline,
           size: 30,
         ), //index 0
+
         Icon(
           Icons.favorite_outline,
           size: 30,
@@ -33,6 +34,12 @@ class HomeBottomBar extends StatelessWidget {
         ),
         //index 4
       ],
+      // onTap: (index) {
+      //   setState(() {
+      //     _page = index;
+      //   });
+      // },
+      letIndexChange: (index) => true,
     );
   }
 }

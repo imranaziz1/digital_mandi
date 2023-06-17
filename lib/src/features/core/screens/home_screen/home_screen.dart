@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: const Icon(
-                      Icons.arrow_back_ios,
+                      Icons.arrow_forward_ios,
                       color: Colors.black54,
                       size: 20,
                     ),

@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "847889473023",
-    "project_id": "digitalmandi-81a40",
-    "storage_bucket": "digitalmandi-81a40.appspot.com"
+    "project_number": "262901806623",
+    "project_id": "book-my-guide",
+    "storage_bucket": "book-my-guide.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:847889473023:android:6c1353dbdb0a93a66b5bca",
+        "mobilesdk_app_id": "1:262901806623:android:a378a6820cf9b16da4472a",
         "android_client_info": {
           "package_name": "com.example.book_my_guide"
         }
       },
       "oauth_client": [
         {
-          "client_id": "847889473023-akld6srvkbpa0dv80614g3413qnb5pts.apps.googleusercontent.com",
+          "client_id": "262901806623-872iqqdib32magpq6ckd0ipdlu2iugau.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA6LBLuVGjxK32mrRjZQkFgDjApjcDL0EQ"
+          "current_key": "AIzaSyD6sZYDdygZIkz7byVNSi8tdtnHqJHnxAU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "847889473023-akld6srvkbpa0dv80614g3413qnb5pts.apps.googleusercontent.com",
+              "client_id": "262901806623-872iqqdib32magpq6ckd0ipdlu2iugau.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "847889473023-d4qb314pbcve3v72m8ip5586eju4rv27.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.digitalMandi"
-              }
             }
           ]
         }

@@ -159,7 +159,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                               ),
                             ),
-                            const Padding(
+                             Padding(
                               padding: EdgeInsets.only(top: 10),
                               child: Row(
                                 mainAxisAlignment:
@@ -181,7 +181,7 @@ class _HomePageState extends State<HomePage> {
                             const SizedBox(
                               height: 5,
                             ),
-                            const Row(
+                             Row(
                               children: [
                                 Icon(
                                   Icons.star,

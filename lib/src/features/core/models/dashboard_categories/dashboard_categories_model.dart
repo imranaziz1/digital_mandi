@@ -11,7 +11,5 @@ class DashboardCategories{
     DashboardCategories("FR", "lemons", "15 Items", () { }),
     DashboardCategories("VG", "Mango", "16 Items", () { }),
     DashboardCategories("EF", "Grapes", "13 Items", () { }),
-
-
   ];
 }
